@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!--
+https://www.w3schools.com/Css/tryit.asp?filename=trycss_zindex
+An element with greater stack order is always in front of an element with a lower stack order.
+-->
+
+<head>
+<style>
+img.i1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+/*
+An element with greater stack order is always in front of an element with a lower stack order.
+*/
+}
+img.i2 {
+    position: absolute;
+    left: 0px;
+    top: 141px;
+    z-index: 2;
+/*
+An element with greater stack order is always in front of an element with a lower stack order.
+*/
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<img class="i1" src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="140">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+<h1>This is a heading</h1>
+<img class="i2" src="https://www.w3schools.com/cssref/w3css.gif" width="100" height="140">
+<p>Because the image has a z-index of 2, it will be placed above the text.</p>
+</body>
+</html>

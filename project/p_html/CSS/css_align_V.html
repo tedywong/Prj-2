@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<!--
+https://www.w3schools.com/Css/tryit.asp?filename=trycss_align_line-height
+-->
+<head>
+<style>
+.center {
+    line-height: 200px;
+    height: 200px;
+    border: 3px solid green;
+    text-align: center;
+}
+/*not as good as using <span>
+.center p {
+    line-height: 1.5;     /* ??  */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+another way to center vertically:
+https://www.w3schools.com/Css/tryit.asp?filename=trycss_align_transform
+.center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+*/
+</style>
+</head>
+<body>
+
+<h2>Centering</h2>
+<p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+
+<div class="center">
+<!--
+  <p>I am vertically and horizontally centered.</p>
+-->
+  <span>I am vertically and horizontally centered.</span>
+</div>
+
+</body>
+</html>

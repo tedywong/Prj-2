@@ -1,0 +1,18 @@
+div.cc {
+		margin: 20px;
+}
+.carousel{
+    background: #fff;   /* main background color */
+    margin-top: 20px;
+	width:50%;
+    margin: auto;
+}
+.carousel .item{
+    min-height: 250px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+
+}

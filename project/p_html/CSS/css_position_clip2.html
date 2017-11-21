@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!--
+https://developer.mozilla.org/en-US/docs/Web/CSS/clip
+-->
+<head>
+<style>
+.dotted-border { 
+  border: dotted;  
+  position: relative; 
+  width: 536px;
+  height: 350px;
+}
+
+#top-left, #middle, #bottom-right {
+  position: absolute;
+  top: 0px;
+}
+
+#top-left {
+  left: 360px;
+  clip: rect(0px, 175px, 113px, 0px); 
+}
+
+
+#middle {
+  left: 280px;
+  clip: rect(119px, 255px, 229px, 80px); 
+  /* standard syntax, unsupported by Internet Explorer 4-7 */
+}
+
+#bottom-right {
+  left: 200px;
+  clip: rect(235px 335px 345px 160px);
+  /* non-standard syntax, but supported by all major browsers*/
+}
+</style>
+</head>
+<body>
+
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/clip -->
+
+<p class="dotted-border">
+  <img src="https://developer.mozilla.org/@api/deki/files/3613/=hut.jpg" title="Original graphic">
+  <img id="top-left" src="https://developer.mozilla.org/@api/deki/files/3613/=hut.jpg" title="Graphic clipped to upper left">
+  <img id="middle" src="https://developer.mozilla.org/@api/deki/files/3613/=hut.jpg" title="Graphic clipped towards middle">
+  <img id="bottom-right" src="https://developer.mozilla.org/@api/deki/files/3613/=hut.jpg" title="Graphic clipped to bottom right">
+</p>
+
+</body>
+</html>

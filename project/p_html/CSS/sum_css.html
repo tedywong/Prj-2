@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#sum {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#sum td, #sum th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#sum tr:nth-child(even){background-color: #f2f2f2;}
+
+#sum tr:hover {background-color: #ddd;}
+
+#sum th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#key {
+  background-color: #ccc;
+}
+</style>
+</head>
+<body>
+<!--
+	
+&lt;head&gt;
+&lt;/head&gt;
+&lt;
+&gt;
+-->
+<h1>CSS Summary</h1>
+<table id="sum">
+  <tr>
+    <td><a href="#color">color</a></td>
+	<td><a href="#border">border</a></td>
+	<td><a href="#background">background</a></td>
+	<td><a href="#margin">margin</a></td>
+	<td><a href="#padding">padding</a></td>
+	<td><a href="#hw">height/width</a></td>
+    <td><a href="#outline">outline</a></td>
+	<td><a href="#text">text</a></td>
+	<td><a href="#font">font</a></td>
+	<td><a href="#icon">icon</a></td>
+	
+  </tr>	
+  <tr>
+ 	<td><a href="#link">link</a></td>	
+  	<td><a href="#list">list</a></td>	
+    <td><a href="#table">table</a></td>
+	<td><a href="#display">display</a></td>
+	<td><a href="#max-width">max-width</a></td>
+	<td><a href="#position">position</a></td>	
+	<td><a href="#overflow">overflow</a></td>
+	<td><a href="#float">float/clear</a></td>
+	<td><a href="#align">align</a></td>
+	<td><a href="#combinator">combinator</a></td>	
+  </tr>
+  <tr>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>	
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>	
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#special">Nice Effect</a></td>	
+  </tr>
+  <tr>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>	
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>	
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>
+	<td><a href="#"></a></td>	
+  </tr>
+</table>
+<br><br><br>
+<table id="sum">
+  <tr>
+    <th>Property</th>
+    <th>Property d</th>
+    <th>Value</th>
+	<th>Sample</th>
+	<th>Comment</th>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>&lt;head&gt; &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; &lt;/head&gt;
+	</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>style="color:Red;"</td>
+	<td>style="..."</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="color">
+    <td>color</td>
+	<td>background-color</td>
+	<td>#123456</td>
+	<td>background-color:#fff;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>color</td>
+	<td></td>
+	<td>color:Red;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>rgba(red, green, blue, alpha)</td>
+	<td>alpha (opacity) = 0.0 to 1.0</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>border</td>
+	<td>border-width</td>
+	<td></td>
+	<td>style="border:2px solid Tomato;"</td>
+	<td><a href="css_border-left_color.html">border-left heightlight with red color</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>border-style</td>
+	<td>dashed;double;none;hidden;</td>
+	<td>border-style: dotted;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>border-color</td>
+	<td><a href="css_border-color.html">border-color requires border-style first</a></td>
+	<td>border-width: 2px 10px 4px 20px;</td>
+	<td>p.mix {border-style: dotted dashed solid double;}</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>border-radius</td>
+	<td></td>
+	<td>border-radius: 5px;</td>
+	<td>rounded corner</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td id="key">border-left: 6px solid red;</td>
+	<td id="key">background-color: lightgrey;</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="background">
+    <td>background</td>
+	<td>background-color</td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>background-image</td>
+	<td></td>
+	<td>background-image: url("paper.gif");</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>background-repeat</td>
+	<td>no-repeat;</td>
+	<td>background-repeat: repeat-x;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>background-repeat: repeat-y;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>background-attachment</td>
+	<td></td>
+	<td>background-attachment: fixed;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td style="background:orange">background-position</td>
+	<td></td>
+	<td>background-position: right top;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="margin">
+    <td>margin</td>
+	<td></td>
+	<td></td>
+	<td>margin: 25px 50px 75px 100px;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>margin: 25px 50px 75px;</td>
+	<td>right and left margins are 50px</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>margin: 25px 50px;</td>
+	<td>top and bottom margins are 25px</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>margin: auto;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>div {width:300px;margin: auto;
+    border: 1px solid red;}</td>
+	<td>auto to horizontally center the element within its container</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td id="key">div {height:300px;line-height:300px;
+  text-align:center;}</td>
+	<td id="key">Note: "line-height" has to be the same as "height"</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td id="key">in body: &lt;div&gt; &lt;span&gt; ... &lt;/span&gt;&lt;/div&gt; </td>
+	<td id="key">This div will be centered V-H inside the outer div</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="padding">
+    <td>padding</td>
+	<td></td>
+	<td><a href="css_padding_left_indent.html">padding as indent</a></td>
+	<td id="key">box-sizing: border-box;</td>
+	<td id="key">causes the element to maintain its width, decrease space if padding increases</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="hw">
+    <td>height/width</td>
+	<td>max-width</td>
+	<td></td>
+	<td style="background:orange"><a href="css_width_maxwidth.html">width-maxwidth</a></td>
+	<td>(%) of the containing block.</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="outline">
+    <td style="background:orange">outline</td>
+	<td>outline-style</td>
+	<td>dashed;double;none;hidden;</td>
+	<td></td>
+	<td>line that is drawn OUTSIDE the borders</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>Outline Color</td>
+	<td></td>
+	<td>outline-color: invert</td>
+	<td>ensures that the outline is visible, regardless of color background</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td style="background:orange">outline-width</td>
+	<td></td>
+	<td></td>
+	<td>in px, pt, cm, em</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td>thin (typically 1px)</td>
+	<td>medium (typically 3px)</td>
+	<td>thick (typically 5px)</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>p.ex3 {outline: 5px solid yellow;}</td>
+	<td>short hand</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>outline-offset</td>
+	<td></td>
+	<td></td>
+	<td>padding outside of border (similar to margein?)</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="text">
+    <td>text</td>
+	<td>text-align</td>
+	<td>left or right aligned, centered, or justified.</td>
+	<td><a href="css_text_image_text_verticle-align.html">text - image/text verticle-align</a></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>color</td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>text-decoration: none;</td>
+	<td>overline;underline;line-through;</td>
+	<td></td>
+	<td></td>
+  </tr>  
+  <tr>
+    <td></td>
+	<td>text-transform</td>
+	<td>uppercase or lowercase letters, or capitalize</td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>Text Indentation</td>
+	<td></td>
+	<td>text-indent: 50px;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>word-spacing: 10px;</td>
+	<td>word-spacing: -5px; (touching)</td>
+	<td>letter-spacing: 3px;</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>line height</td>
+	<td>0.7(touching)</td>
+	<td>(>1.2 wider than normal)</td>
+	<td>default line height is 110% to 120%</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>direction: rtl;</td>
+	<td>from right to left</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td>text-shadow: 3px 2px red;</td>
+	<td>horizontal shadow (3px), vertical shadow (2px)</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="font">
+    <td>font</td>
+	<td>font-family</td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>font-style</td>
+	<td>normal;italic;oblique;</td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>font-size</td>
+	<td style="background:orange">16px == 1em</td>
+	<td>body {font-size:100%;}</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="icon">
+    <td>icon</td>
+	<td>fa-heart</td>
+	<td>fa-car,fa-file,-bars</td>
+	<td><i class="fa fa-cloud"></i></td>
+	<td>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;</td>
+  </tr>
+  <tr>
+    <td>Bootstrap</td>
+	<td>glyphicon-user,-remove</td>
+	<td>glyphicon-envelope,-thumbs-up</td>
+	<td><i class="glyphicon glyphicon-cloud"></i></td>
+	<td>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;</td>
+  </tr>  
+  <tr>
+    <td style="background:orange"><a href="css_google_icon.html">Google</a></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="link">
+    <td>link</td>
+	<td>a:link</td>
+	<td>a:visited</td>
+	<td style="background:orange">a:hover</td>
+	<td>a:active</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>text-decoration:</td>
+	<td>none, underline</td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>background-color:</td>
+	<td></td>
+	<td><a href="css_link_button_border.html">link button-border</a></td>
+	<td><a href="css_link_button.html">link button-background</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td><a href="css_hyperlink_style.html">mouse over hyperlink</a></td>
+    <td><a href="css_mouse_over_cursor_style.html">mouse over cursor style</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="list">
+    <td>list</td>
+	<td><a href="css_list.html">list-available style</a></td>
+	<td style="background:orange"><a href="css_list_custom_gif.html">list w/custom gif</a></td>
+	<td><a href="css_list_in_out_side.html">list - in/out side style</a></td>
+	<td><a href="css_list_color.html">list - color background</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td><a href=""></a></td>
+	<td><a href="css_list-style-type.html">Available list-style-type</a></td>
+	<td style="background:orange"><a href="css_list_default_setting.html">list - default setting</a></td>
+	<td><a href=""></a></td>
+  </tr>
+
+  <tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+  </tr>
+  <tr id="table">
+  	<td>table</td>
+    <td><a href="css_table_caption.html">table w/caption</a></td>
+	<td><a href="css_table_border.html">table w/border only</a></td>
+	<td><a href="css_table_align.html">table VH alignment</a></td>
+	<td><a href="css_table_loaded.html">table loaded - hover, color</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td><a href="css_table_horizontal-divider.html"></a>table w/horizontal divider</td>
+    <td><a href="css_table_responsive.html">table - responsive</a></td>
+	<td><a href="css_table_H-border.html"></a>table w/horizontal border</td>
+  </tr>
+    <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>  
+  <tr id="display">
+    <td style="background:orange">display</td>
+	<td>block-level element</td>
+	<td>div,p,h1,form,</td>
+	<td>form,header,section</td>
+	<td>take up full width</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td style="background:orange">inline element </td>
+	<td>span, a, img</td>
+	<td></td>
+	<td>takes up as much width as necessary</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td><a href="css_display_visibiliy.html">display-none vs visibility-hidden (always take up space)</a></td>
+	<td><a href="css_display_block.html">display using block from none</a></td>
+    <td style="background:orange">display:none - takes up no space</td>
+	<td>visibility:hidden - reserves the required space</td>
+	</tr>
+  <tr>
+	<td></td>
+	<td style="background:orange"><a href="css_display_in_block.html">display 2 elements in 2 blocks</a></td>
+	<td style="background:orange"><a href="css_display_inline.html">display a list using inline</a></td>
+	<td>block: 1 element per line</td>
+	<td>inline: all elements in the same line</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="max-width">
+    <td style="background:orange">max-width</td>
+	<td>px</td>
+	<td><a href="css_max-width_responsive.html">max-width makes the site responsive</a></td>
+	<td><a href=""></a></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="position">
+    <td style="background:orange">position</td>
+	<td><a href="css_position_sticky.html">position:sticky</a></td>
+	<td><a href="css_position_fixed.html">position:fixed</a></td>
+	<td><a href="css_position_absolute.html">position:absolute</a></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td><a href="css_position_overlapping.html">position overlapping</a></td>
+	<td><a href="css_position_text_on_image.html">position text on image</a></td>
+    <td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td><a href="css_position_clip.html">position - clip image</a></td>
+	<td><a href="css_position_clip2.html">position - clip image 2</a></td>
+	<td><a href="css_position_clip3.html">position - clip image 3</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="overflow">
+    <td style="background:orange">overflow</td>
+	<td><a href=""></a></td>
+	<td><a href="css_overflow_auto.html">overflow:auto</a></td>
+	<td><a href="css_overflow_hidden.html">overflow:hidden</a></td>
+	<td><a href="css_overflow_xy.html">overflow:xy scroll control</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="float">
+    <td style="background:orange">float/clear</td>
+	<td><a href=""></a></td>
+	<td><a href="css_float.html">float</a></td>
+	<td><a href="css_clear.html">clear</a></td>
+	<td><a href="css_clearfix.html">clearfix</a></td>>
+  </tr>  
+  <tr>
+    <td></td>
+	<td style="background:orange"><a href="css_float_layout.html">Sample Web layout</a></td>
+	<td><a href="css_float_img_caption.html">float - img w/caption (in a div)</a></td>
+	<td><a href="css_float_1st_letter.html">float - 1st letter of a paragraph</a></td>
+	<td><a href="css_float_H_menu.html">css_float - horizontal menu</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><a href="css_float_in-line_block.html">float in-line block</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+  </tr>
+  <tr id="align">
+    <td style="background:orange"><a href="">align</a></td>
+	<td>margin:auto</td>
+	<td><a href="css_align_img.html">align - image</a></td>
+	<td><a href="css_align_H_center.html">align - center horizontally</a></td>
+	<td>become a block element</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td><a href="css_align_right.html">align - right using position:absolute</a></td>
+	<td colspan=3>Tip: When using position, always define margin and padding for the body element. 
+	This is to avoid visual differences in different browsers. Also, include !DOCTYPE</td>
+  </tr>
+  <tr>
+    <td></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+	<td style="background:orange"><a href="css_align_V.html">align - vertically</a></td>
+	<td>line-height==height, span inside the div </td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="combinator">
+    <td style="background:orange">Combinator</td>
+	<td><a href=""></a></td>
+	<td>div > p (child only)</td>
+	<td>div p (all decendants)</td>
+	<td><a href="css_combinator.html">CSS combinator</a></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td>div + p (next sibling)</td>
+	<td></td>
+	<td>div ~ p (all siblings)</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+	<td><a href=""></a></td>
+  </tr>  
+  <tr>
+    <td></td>
+	<td>div + p (next sibling)</td>
+	<td></td>
+	<td>div ~ p (all siblings)</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+    <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>  
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>  
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+    <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>  
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr id="special">
+    <td><a href="css_div_column-width.html">column-width</a></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+</table>
+
+</body>
+</html>

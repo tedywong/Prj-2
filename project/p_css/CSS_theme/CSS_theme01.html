@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>CSS Theme</title>
+<head>
+<style>
+div.blah{
+  background-color: #fff;
+  border: 2px solid #777;
+  color:  #000;
+  font-size: 1em;
+  padding: 0;
+  border: 2px solid #777;
+}
+div.danger {
+  background-color: #f44336;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  padding: 3;
+  border: 2px solid #777;
+}
+div.warn {
+  background-color: #ff9800;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  padding: 3;
+  border: 2px solid #777;
+}
+div.info {
+  background-color: #2196f3;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  padding: 3;
+  border: 2px solid #777;
+}
+div.success {
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  padding: 3;
+  border: 2px solid #777;
+}
+</style>
+</head>
+<body>
+<h3 align="center">What is the hidden Message</h3>
+<p align="center">Click button to change your "message"</p>
+<hr>
+<div style="text-align:center;">
+<button class="button" onclick="blah()">Blah</button>
+<button class="button" onclick="danger()">Danger</button>
+<button class="button" onclick="warn()">Warning</button>
+<button class="button" onclick="info()">Info</button>
+<button class="button" onclick="success()">Success</button> <br><br>
+<button class="button" onclick="real()" style="background-color:#ff9800; color:"eee;">Here's the REAL message</button>
+</div>
+<hr>
+
+<div id="d_mess" class="blah">
+  <p id="mess">What is the hidden message?</p>
+</div>
+
+
+<script>
+function blah(){
+var element = document.getElementById('d_mess');
+element.className= 'blah'; 
+document.getElementById('mess').innerHTML="What is the hidden message?";
+}
+function danger(){
+var element = document.getElementById('d_mess');
+element.className= 'danger'; 
+document.getElementById('mess').innerHTML="What is the hidden message?";
+}
+function warn(){
+var element = document.getElementById('d_mess');
+element.className= 'warn'; 
+document.getElementById('mess').innerHTML="What is the hidden message?";
+}
+function info(){
+var element = document.getElementById('d_mess');
+element.className= 'info'; 
+document.getElementById('mess').innerHTML="What is the hidden message?";
+}
+function success(){
+var element = document.getElementById('d_mess');
+element.className= 'success'; 
+document.getElementById('mess').innerHTML="What is the hidden message?";
+}
+function real(){
+var element = document.getElementById('d_mess');
+element.className= 'danger'; 
+document.getElementById('mess').innerHTML="Ted, there is so much more to learn.<br>You are really just a novice. <span style='color:yellow;'><em>PERIOD</em></span>!!";
+}
+
+</script>
+</body>
+</html>

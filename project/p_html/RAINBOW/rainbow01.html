@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #eee";>
+<div style="width:100%; align-items: center;">
+<div style="width:50%; margin: auto;">
+<h1>Ethan's Rainbow</h1>
+<canvas id="myCanvas" width="800" height="400" ></canvas>  <!--  style="border:1px solid #000000;"   -->
+</div>
+</div>
+<script>
+var cc=["red", "orange", "yellow", "green", "indigo", "blue", "purple", "#eee"];
+var vv={};
+  for (var i=0; i<8; i++){
+    vv[i]=cc[i]+".mp3";
+  }
+var canvas = document.getElementById('myCanvas');
+canvas.width = width = 800;
+var context = canvas.getContext('2d');
+var drawCircle = function(color, x, y, radius){
+  context.arc(x, y, radius, Math.PI*1, Math.PI*2, 0);
+  context.fillStyle = color;
+  context.fill();
+  context.beginPath();
+};
+//<button name="subject" type="submit" value="fav_HTML">HTML</button>
+
+for(var i=0; i<8; i++){
+    drawCircle(cc[i], 400, 400, 400-30*(i+1));
+//	var y=cc[i]+".mp3";
+    var y;
+	y=vv[i];
+	var x = new Audio(y); 
+	x.play();
+	alert(cc[i], y);
+}
+</script>
+</body>
+</html>

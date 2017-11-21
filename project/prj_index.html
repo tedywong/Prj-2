@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skill Set Review</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="../css/c_exp.css">
+<link rel="stylesheet" href="../css/c_nav.css">
+<link rel="stylesheet" href="../css/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+table.skill {
+    border-collapse: collapse;
+	table-layout: fixed;
+    width: 750px;
+}
+
+table.skill th {
+    padding: 8px;
+    text-align: left;
+	font-size: 16px;
+    border-bottom: 1px solid #ddd;
+	width: 250px;
+}
+
+table.skill td {
+    padding: 8px;
+    text-align: left;
+	font-size: 16px;
+    border-bottom: 1px solid #ddd;
+	width: 250px;
+}
+
+table.note {
+    border-collapse: collapse;
+	table-layout: fixed;
+	font-size: 16px;
+    width: 670px;
+}
+
+table.note td.note1 {
+    padding: 1px;
+    text-align: left;
+	font-size: 16px;
+	width: 70px;
+}
+table.note td.note2 {
+    padding: 1px;
+    text-align: left;
+	font-size: 16px;
+	width: 600px;
+}
+
+p.skilllevel {
+    border-left: 6px solid red;
+    background-color: #eee;
+}
+#levels{
+  font-size: 1.5em;
+}
+</style>
+<body style="font-family: 'Roboto', sans-serif;">
+<div id="dialogoverlay"></div>
+  <div id="dialogbox">
+    <div id="db">
+      <div id="dialogboxhead"></div>
+      <div id="dialogboxbody"></div>
+      <div id="dialogboxfoot"></div>
+    </div>
+  </div>
+<nav class="navbar navbar-default ">
+  <div class="container-fluid" > 
+    <div class="navbar-header" >
+      <a class="navbar-brand" href="#"><b>Ted Wong 347-555-1212</b></a> </div>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Home</a> </li>
+        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Skill Set<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+		    <li><a href="prj_index.html">Overview</a> </li>
+            <li><a href="p_html/html_index.html">HTML</a> </li>
+            <li><a href="p_css/css_index.html">CSS</a> </li>
+            <li><a href="p_js/js_index.html">JavaScript</a> </li>
+			<li><a href="p_jq/jq_index.html">jQuery</a> </li>
+            <li><a href="p_json/json_index.html">JSON</a> </li>
+			<li><a href="p_bs/b_index.html">Bootstrap</a> </li>
+<!--
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Bootstrap</a> </li>
+-->
+			</ul>
+        </li>
+		<li><a href="../resume/resume.html">Resume</a> </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a href="../contact.html">Contact<span class="sr-only">(current)</span></a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="jumbotron jumbo1" >
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="jumbo1a">Skill Set Overview</h1>
+
+		  </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--
+<div id="outer" class="jumbo1" style="width: 100%; text-align: center;">
+  <div id="inner" class="jumbo1a" style="display: inline-block;">Skill Set Overview</div>
+</div>
+-->
+
+<br><br><br>
+<div class="row">
+  <div class="col-sm-1" ></div>
+  <div class="col-sm-4" style="position: relative;">
+<p id="levels"><b>Note: </b>Skill Level</p>
+<table class="note">
+<tr>
+<td class="note1" style="color:red;"><b><em>Novice:</em></b></td>
+<td class="note2">none to minimal knowledge</td>
+</tr>
+<tr>
+<td class="note1" style="color:orange;"><b><em>Entry:</em></b></td>
+<td class="note2">can do work but need help and supervision</td>
+</tr>
+<tr>
+<td class="note1" style="color:green;"><b><em>Good:</em></b></td>
+<td class="note2">can complete work with minimal supervision and help</td>
+</tr>
+<tr>
+<td class="note1" style="color:green;"><b><em>Expert:</em></b></td>
+<td class="note2">can lead a team and guide others</td>
+</tr>
+<tr>
+<td class="note1" style="color:green;"><b><em>Master:</em></b></td>
+<td class="note2">can offer innovative ideas and solutions</td>
+</tr>
+<tr>
+
+</table>
+</div>  <!--  3rd col section  -->
+    <div class="col-sm-6" >
+	  <h3>Ted's current and target skill set level.</h3>
+        <p class="skilllevel"> &nbsp &nbsp (Click web language to try out completed projects)
+		</p><br><br>
+<table class="skill">
+  <tr style="background-color:#2196f3; color:white; text-shadow: 1px 1px #333;">
+    <th>Skill Set</th>
+    <th>Current Level</th>
+    <th>12-month Target Level</th>
+  </tr>
+  <tr>
+    <td><a href="p_html/html_index.html"><b>HTML</b></a></td>
+    <td style="color:green;"><b>Good</b></td>
+    <td style="color:green;"><b>Expert</b></td>
+  </tr>
+  <tr>
+    <td><a href="p_css/css_index.html"><b>CSS</b></a></td>
+    <td style="color:orange;"><b>Entry</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+    <td><a href="p_js/js_index.html"><b>JavaScript</b></a></td>
+    <td style="color:orange;"><b>Entry</b></td>
+    <td style="color:green;"><b>Expert</b></td>
+  </tr>
+  <tr>
+    <td><a href="p_jq/jq_index.html"><b>jQuery</b></a></td>
+    <td style="color:orange;"><b>Entry</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+    <td><a href="p_JSON/json_index.html"><b>JSON</b></a></td>
+    <td style="color:orange;"><b>Entry</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+   <tr>
+    <td><a href="p_bs/b_index.html"><b>Bootstrap</b></a></td>
+    <td style="color:orange;"><b>Entry</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+</table>
+
+<br><br><br>
+<!--
+<h3>Additional web-related skill set to be aquired and improved over the next 12 months</h3>
+<br><br>
+-->
+<table class="skill">
+  <tr style="background-color:#2196f3; color:white; text-shadow: 1px 1px #333;">
+    <th>Additional Skill Set</th>
+    <th>Current Level</th>
+    <th>12-month Target Level</th>
+  </tr>
+  <tr>
+    <td><a href="../Resume/resume.html"><b>Programining Logic</b></a></td>
+    <td style="color:green;"><b>Expert</b></td>
+    <td style="color:green;"><b>Expert</b></td>
+  </tr>
+  <tr>
+    <td><a href="../Resume/resume.html#VBA"><b>VBA</b></a></td>
+    <td style="color:green;"><b>Expert</b></td>
+    <td style="color:green;"><b>Expert</b></td>
+  </tr>
+    <tr>
+    <td style="color:red;"><b>GitHub</b></td>
+    <td style="color:red;"><b>Novice</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+  <td><b>PHP</b></td>
+    <td style="color:red;"><b>Novice</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+    <td><b>SQL</b></td>
+    <td style="color:red;"><b>Novice</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+    <td><b>Python</b></td>
+    <td style="color:red;"><b>Novice</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+    <td><b>C++</b></td>
+    <td style="color:red;"><b>Novice</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+    <td><b>Photoshop</b></td>
+    <td style="color:red;"><b>Novice</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <tr>
+    <td><b>APIs</b></td>
+    <td style="color:orange;"><b>Entry</b></td>
+    <td style="color:green;"><b>Good</b></td>
+  </tr>
+  <td><b>Toolbox</b></td>
+    <td style="color:red;"><b>Incomplete</b></td>
+    <td style="color:green;"><b>Complete set</b></td>
+  </tr>
+</table>
+
+<br><br><br>
+</div>  <!--  2nd col section  -->
+  <div class="col-sm-1" ></div>
+</div>
+
+
+<!-- / HEADER --> 
+
+<br><br><br><br><br><br>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© Ted Wong &nbsp - &nbsp TWong07@tigermail.qcc.cuny.edu &nbsp &nbsp & &nbsp &nbsp 347-555-1212</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

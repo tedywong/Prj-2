@@ -1,0 +1,127 @@
+.navbar-default {
+  background-color:#000080;        /*  #f8f8f8; #81bfdb    Giants#5caaea*/
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > li > a {
+  color:#eee;                       /*#777;   */
+}
+.navbar-default .navbar-brand {
+  color: #fff;                       /*#777;   */
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ccc;                                         /*  #333;    */
+  background-color: transparent;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fff;                                       /*  #5e5e5e;   */
+  background-color: transparent;
+}
+  
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;               /*      #555;   */
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;                           /*      #ccc;   */
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;     /*      #555;   */
+  background-color: #e7e7e7;
+}
+.img-circle {
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid #ddd;
+}
+
+img.img-circle:hover {
+    box-shadow: 0 0 2px 1px #4caf50;
+}
+
+.img-bb {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+img.img-bb:hover {
+    box-shadow: 0 0 2px 1px #4caf50;
+}
+
+
+/*  
+.jumbotron {
+
+
+
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background:transparent;
+
+  }
+*/
+div.jumbo1{
+
+  background-color:#0000ff; 
+  color:white; 
+  text-shadow: 2px 2px #333;
+  margin-bottom: 0px;
+/*  height: 280px;
+*/
+}
+h1.jumbo1a {
+  text-align: center;
+  text-shadow: 2px 2px #333;
+}
+p.jumbo2 {
+  text-align: center;
+  color:orange; 
+  text-shadow: 2px 2px #333;
+}
+p.jumbo3 {
+  text-align: center;
+  color:yellow; 
+  text-shadow: 2px 2px #333;
+}
+
+h2.s_head {
+  background-color:#0000ff; 
+  color:white; 	
+}
+
+
+/*
+.nav > li.disabled > a {
+  color: #777;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+*/

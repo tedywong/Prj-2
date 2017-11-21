@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>jQuery UI Accordion Example</title>
+	<!-- These 2 lines would be included if jquery were hosted locally
+	<script src="jquery-1.12.4.js"></script>
+     <script src="jquery-ui.js"></script> -->
+     
+     <!-- Links to jQuery CDNs -->
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script>
+    $(document).on('ready', function(){
+        $("#accordion").accordion();
+    });
+</script>
+<style type="text/css">
+	header {text-align: center;
+  }
+  body {
+  	background-image: url('waterleftborder.jpg');
+  	background-repeat:repeat-y;
+  	background-color: #FFF;
+  	font-family: Arial, Helvetica, sans-serif;
+  	color: #000;
+  	margin-left:150px
+  }
+</style>
+</head>
+<body>
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<header>
+<h1>Screenplay</h1>
+
+<h2>Act 2 Scene 3 The Job Interview</h2>
+
+<h3>Film context: In this scene our college grad shows her/his poise and subject knowledge of front-end web design and gets the job</h3>
+
+<p>
+<img alt="" src="camera.jpg" width="200" /></p>
+</header>
+
+<hr />
+
+<div id="accordion">
+<h3>Question 1:<br />
+Interviewer: So, I see from your college transcript that you studied web design...</h3>
+
+<div>
+<p>
+I grew up with the internet. For a long while, I was just a user.  However, during the last couple of years, I have been so intrigued and curious about the internet that I wanted to become a webmaster.  This is why now I am majoring in both computer science and web design.</p>
+</div>
+
+<h3>Question 2:<br />
+Interviewer: Tell me about the roles of HTML, CSS and javascript</h3>
+
+<div>
+<p>
+They are really the 3 musketeers of web design! HTML is about the content; CSS is about the presentation of the content; and javascript is about the special functioning of the webpage.  So, you could use HTML to layout the content of a webpage; then use CSS to pretty up the page, finally, you use javascript to interact with the user.  This is why internet has become so powerful because it has content to help, educate and entertain, it could be so pretty to look at and it could interact with you just like another person!</p>
+</div>
+
+<h3>Question 3:<br />
+Interviewer: Was it largely a theory class or was there much hands-on?</h3>
+
+<div>
+<p>
+Most of the web related classes are hands-on.  Professors would teach us about the concepts, reserve words, and go through examples. Then we would go through the grind to finish our assignments. Next comes either the torture chamber or the pedestal as they show us some of our worst and best works.</p>
+</div>
+
+<h3>Question 4:<br />
+Interviewer: Did you invest much time in developing a web portfolio?</h3>
+
+<div>
+<p>
+Oh yeah!  Web and programming classes are absolutely the worst.  It is just like a black hole and it sucks up all my free time.  I could always finish an assignment by satisfying the required functionality.  However, afterwards, I would be spending so much more time to think about how to improve the codes, make the webpages prettier, choose a more soothing palette, refine the existing graphics, and find a better picture.  This is actually a never ending task and web designing is absolutely the worst! Of course, I do realize that, sometimes, I have to stop. Enough is enough!</p>
+
+</div>
+
+<h3>Question 5:<br />
+Interviewer: What was your best project?</h3>
+
+<div>
+<p>
+It has to be the QCC Iron Chef annual cooking contest webpage. This project basically required us to show everything we had learned about web design.  We need to use 2 google fonts and 3 specified palettes, create a banner, and use a lot of graphics.  All the contestants’ information is stored in an object variable, depending on user’s selection, using a drop-down box, the webpage can display the detailed information of the contestant’s profile and the person’s picture in a Halloween costume. The webpage can also print out a contestant ID card with name, picture and the preassigned mystery ingredients! Then, there is a membership referral form at the end which requires data validation.  So, this project really tests us everything about the HTML, CSS, object variable, arrays, loop, conditional statement, form …  It was hard and time consuming but a great project to really test and show what we have learned!</p>
+</div>
+</div>
+<!-- redundant and not necessary
+-->
+<script src="jquery-1.12.4.js"></script>
+<script src="jquery-ui.js"></script>
+	
+</body>
+</html>

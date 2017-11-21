@@ -1,0 +1,176 @@
+<html>
+<head>
+
+</head>
+<body>
+<p align="right">ET712 Animation - Ted Wong</p>
+<p align="right">Oct 25, 2017</p>
+<h3 align="center">JQuery Animation</h3>
+<p align="center">Click any Button!</p>
+<hr>
+Movement:
+<button class="button" onclick="mover()">Move right</button>
+<button class="button" onclick="movel()">Move left</button>
+<button class="button" onclick="moveu()">Move up</button>
+<button class="button" onclick="moved()">Move down</button><br><br>
+Effect:
+<button class="button" onclick="opa()">Blink</button>
+<button class="button" onclick="cir()">Round to a Circle</button>
+<button class="button" onclick="cirflip()">Flip</button>
+<button class="button" onclick="hide()">Hide</button>
+<button class="button" onclick="show()">Show</button><br><br>
+Size:
+<button class="button" onclick="sizw()">Wider</button>
+<button class="button" onclick="sizn()">Narrower</button>
+<button class="button" onclick="sizl()">Longer</button>
+<button class="button" onclick="sizs()">Shorter</button><br>
+<hr>
+<!--
+<button width="60%" class="button" onclick="combo()">Combination</button>
+<br>
+-->
+<div id="divv"  style="background:#98bf21;height:100px;width:100px;position:relative;text-align:center;">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+function mover(){
+var div=$("#divv");
+div.animate({left:"+=50px"},500);
+};
+function movel(){
+var div=$("#divv");
+div.animate({left:"-=50px"},500);
+};
+function moveu(){
+var div=$("#divv");
+div.animate({top:"-=50px"},500);
+};
+function moved(){
+var div=$("#divv");
+div.animate({top:"+=50px"},500);
+};
+
+function opa(){
+var div=$("#divv");
+div.animate({opacity: 1}, 200);
+div.animate({opacity: 0.3}, 200);
+div.animate({opacity: 1}, 200);
+div.animate({opacity: 0.3}, 200);
+div.animate({opacity: 1}, 200);
+div.animate({opacity: 0.3}, 200);
+div.animate({opacity: 1}, 200);
+};
+function cirflip(){
+var div=$("#divv");
+div.animate({borderRadius: 30}, 200);
+div.animate({borderRadius: 30}, 200);
+div.animate({borderRadius: 30}, 200);
+div.animate({borderRadius: 0}, 200)
+};
+function cir(){
+var div=$("#divv");
+div.animate({borderRadius: 100}, 1000);
+div.animate({borderRadius: 0}, 1500);
+};
+function sizw(){
+var div=$("#divv");
+div.animate({width:"+=50px"},500);
+};
+function sizn(){
+var div=$("#divv");
+div.animate({width:"-=50px"},500);
+};
+function sizl(){
+var div=$("#divv");
+div.animate({height:"+=50px"},500)
+}
+function sizs(){
+var div=$("#divv");
+div.animate({height:"-=50px"},500)
+}
+function siz(){
+reset();
+var div=$("#divv");
+div.animate({height:"+=50px"},500);
+div.animate({width:"+=60px"},1000);
+div.animate({height:"-=10px"},300);
+div.animate({width:"-=10px"},1000);
+div.animate({width:"+=30px"},500);
+div.animate({width:"-=80px", height:"-=40px"},500);
+};
+function combo(){
+reset();
+hello();
+var div=$("#divv");
+div.animate({borderRadius: 20}, 500);
+div.animate({borderRadius: 40}, 500);
+div.animate({height:"-=50px"},300);
+div.animate({opacity: 0.8}, 500);
+div.animate({borderRadius: 20}, 500);
+div.animate({width:"+=30px"},500);
+div.animate({borderRadius: 30}, 500);
+div.animate({opacity: 0.6}, 600);
+div.animate({borderRadius: 40}, 500);
+div.animate({height:"+=50px"},300);
+div.animate({top:"+=100px"},1000);
+div.animate({borderRadius: 30}, 500);
+div.animate({borderRadius: 40}, 500);
+div.animate({left:"+=500px"},1000);
+div.animate({borderRadius: 30}, 500);
+div.animate({borderRadius: 40}, 500);
+div.animate({top:"+=300px", width:"+=30px", height:"+=50px"},1000);
+div.animate({borderRadius: 30}, 500);
+div.animate({borderRadius: 40, opacity: 0.4}, 500);
+div.animate({height:"-=50px", width:"-=60px", top:"-=400px", left:"-=500px"},500);
+div.animate({borderRadius: 100, opacity: 0.6}, 500);
+div.animate({borderRadius: 0, opacity: 0.2}, 500);
+div.animate({borderRadius: 100, opacity: 0.6}, 500);
+div.animate({borderRadius: 0, opacity: 0.2}, 500);
+div.animate({opacity: 0}, 500);
+//$(document).ready(function(){
+//bbye();
+//});
+//bbye();
+};
+
+//w/o callback ==> just the effect
+function hide(){
+$(document).ready(function(){
+//    $(#hide).click(function(){
+        $("#divv").hide(1000);
+//		alert("without callback");
+//    });
+});
+}
+
+//w/ callback ==> effect then call function
+function show(){
+$(document).ready(function(){
+//    $(#hide).click(function(){
+        $("#divv").show(1000, function(){
+//		  alert("with callback");
+		});
+//    });
+});
+}
+function bbye(){
+document.getElementById("divv").innerHTML="<h1>Bye!</h1>";
+};
+function hello(){
+document.getElementById("divv").innerHTML="<h2>Hello!</h2>";
+//setTimeout(clear(), 10000);
+};
+function clear(){
+document.getElementById("divv").innerHTML="";
+};
+function reset(){
+var div=$("#divv");
+div.animate({height:"100px"},100);
+div.animate({width:"100px"},100);
+div.animate({opacity: 1}, 100);
+clear();
+};
+</script>
+</body>

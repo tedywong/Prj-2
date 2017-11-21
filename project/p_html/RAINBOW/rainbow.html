@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #eee";>
+<div style="text-align:center;">
+<h1 >Build your own "Rainbow"</h1>
+<h4>(Click any color button to paint your rainbow)</h4><br>
+<button name="subject" type="submit" value="0" onclick="drawr('0')">Red</button>
+<button name="subject" type="submit" value="1" onclick="drawr('1')">Orange</button>
+<button name="subject" type="submit" value="2" onclick="drawr('2')">Yellow</button>
+<button name="subject" type="submit" value="3" onclick="drawr('3')">Green</button>
+<button name="subject" type="submit" value="5" onclick="drawr('4')">Blue</button>
+<button name="subject" type="submit" value="4" onclick="drawr('5')">Indigo</button>
+<button name="subject" type="submit" value="6" onclick="drawr('6')">Purple</button>
+<button name="subject" type="submit" value="7" onclick="drawr('7')">White</button>
+</div>
+<hr>
+<div style="width:100%; align-items: center;">
+<div style="width:50%; margin: auto;">
+<canvas id="myCanvas" width="800" height="400" ></canvas>  <!--  style="border:1px solid #000000;"   -->
+</div>
+</div>
+
+<script>
+var istart=0;
+var ib;
+var ie;
+var cc=["red", "orange", "yellow", "green", "blue", "indigo",  "purple", "white"];
+var vv={};
+  for (var i=0; i<8; i++){
+    vv[i]=cc[i]+".mp3";
+  }
+var canvas = document.getElementById('myCanvas');
+canvas.width = width = 800;
+var context = canvas.getContext('2d');
+
+var drawCircle = function(color, x, y, radius){
+  context.arc(x, y, radius, Math.PI*1, Math.PI*2, 0);
+  context.fillStyle = color;
+  context.fill();
+  context.beginPath();
+};
+
+function drawr(i){
+    if (istart > 7){
+	  alert("Used up all 7 colors.  Restart");
+	  istart=0;
+	}
+//	alert("i "+i);
+	ib=istart;
+	ie=istart+2;
+    for(var j=ib; j<ie; j++){
+//      alert("j "+j);
+      drawCircle(cc[i], 400, 400, 400-30*(j+1));
+      var y;
+	  y=vv[i];
+	  var x = new Audio(y); 
+	  x.play();
+//	  alert(cc[i]+" "+ y);
+    }
+    istart=istart+1;
+}
+</script>
+</body>
+</html>

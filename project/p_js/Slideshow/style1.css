@@ -1,0 +1,47 @@
+/* CSS layout */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	min-width: 600px;
+}
+
+#left_col {
+	float: left;
+	width: 200px;
+}
+
+#right_col {
+	float: right;
+	width: 200px;
+}
+
+#page_content {
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+#container {
+	
+/*	background-image: url('images/home_land_1024.jpg');
+*/
+    background-image: url('images/GD_1024.jpg');
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: "Monotype Corsiva";
+	font-size: large;
+	color: red;   /*#000000; 
+	text-shadow: 1px 1px #eee; */ 
+	background-color: #000000;
+	
+}

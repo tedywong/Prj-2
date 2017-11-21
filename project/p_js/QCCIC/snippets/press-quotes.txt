@@ -1,0 +1,7 @@
+'Chicken — Orange',
+'Duck — Smoke',
+'Beef — Chow Fun',
+'Pork — Soysauce',
+'Fish — Steaming',
+'Venison — BBQ',
+'Shrimp — Egg'
